@@ -23,9 +23,16 @@ Paste this at the top of any <body> block
 </header>
 
     <main>
-        <h2>Documentation Index</h2>
-        <p>This page will grow to include detailed documentation for Vehicle Service Tracker features. Below is a starting index of topics.</p>
+        <p>This documentation provides a complete guide to using Vehicle Service Tracker. It covers creating and managing vehicles, recording service history, attaching receipts and documents, and using search, reporting, and backup tools to organize and review your data.</p>
+		<p>Refer to the following annotated screen shot for an overview of major features</p>
+		<a href="images/annotated-master-view.jpg" target="_blank">
+		<img src="images/annotated-master-view.jpg"
+			   alt="Vehicle Service Tracker main screen with annotated sections"
+			   class="doc-image">
+		</a>
+		<p class="caption">Annotated Main Application Screen</p>
 
+        <h2>Documentation Index</h2>
         <ul>
             <li><a href="#getting-started">Getting Started</a></li>          
             <li><a href="#adding-vehicles">Adding and Managing Vehicles</a></li>
@@ -44,7 +51,8 @@ Paste this at the top of any <body> block
 	<!-- BEGIN GETTING STARTED -->
 		<h3 id="getting-started">Getting Started</h3>
 
-			<p>Welcome to Vehicle Service Tracker! This guide walks you through the basics of creating vehicle records, adding service history, attaching receipts or images, and reviewing your maintenance history over time.</p>
+			<p>Welcome to Vehicle Service Tracker! This Getting Started section provides an overview of the core features, including creating vehicle records, adding service history, attaching receipts or images, and reviewing your maintenance data over time.</p>
+			<p> Detailed instructions for each feature are covered in the sections that follow.</p>			
 			
 			<h4>1. Add Your First Vehicle</h4>
 			<p>Start by adding a vehicle record. Enter basic details such as year, make, model, trim, VIN, license plate, current odometer, and any notes you want to keep with the vehicle.</p>
@@ -63,19 +71,14 @@ Paste this at the top of any <body> block
 			<p>Vehicle Service Tracker includes report-style views that summarize vehicle and service information in a clean, printable format. Reports can reflect your current search criteria and sort order.</p>
 			
 			<h4>6. Back Up Your Data</h4>
-			<p>Use the import and export tools to create a backup of your vehicle records, service records, and attachment metadata. Exported data is designed to be readable and restorable.</p>
+			<p>Use the import and export tools to create a backup of your vehicle records, service records, and attachments.</p>
 			
 			<h4>7. Sample Data</h4>
 			<p>
 			  Want to explore the app before entering your own vehicle history?<br>
-			  You can load sample vehicles and service records from the app when sample data options are available.
+			  You can load sample vehicles and service records to experiment with features, search tools, and reports using realistic data.
 			</p>
-			
-			<p>
-			  <em>When you're ready, you can remove sample data — or all data — by visiting the
-			  <a href="#clearing-data"><strong>Clearing Your Data</strong></a> section.</em>
-			</p>
-			
+						
 			<hr>				
     <!-- END GETTING STARTED -->
         
@@ -85,17 +88,18 @@ Paste this at the top of any <body> block
 
 			<p>Vehicle records are the foundation of the app. Each service record belongs to a vehicle, so start by creating the vehicles you want to track.</p>
 			
-			<p>Vehicle details may include:</p>
+			<p>Vehicle details include:</p>
 			<ul>
-			  <li>Year, make, model, and trim</li>
-			  <li>VIN and license plate</li>
+			  <li>Year, make, and model</li>
 			  <li>Current odometer reading</li>
-			  <li>Notes about ownership, condition, or reminders</li>
+			  <li>VIN and license plate</li>
 			</ul>
-			
-			<p>To update an existing vehicle, select it from the vehicle list and edit the fields in the detail area. Changes are saved through the app’s normal persistence workflow.</p>
-			
-			<p>Deleting a vehicle may also remove its related service history, depending on the app’s current delete behavior. Review records carefully before removing a vehicle.</p>
+		<p>To add a new vehicle, use the <strong>+ (Add)</strong> button in the vehicle section. The new vehicle will appear in the table, where you can enter or update its details.</p>
+		
+		<p>To update an existing vehicle, select it from the vehicle table and edit the fields in the detail area. Changes are saved automatically.</p>
+		
+		<p>To delete a vehicle, use the <strong>– (Delete)</strong> control. 
+		<br><b>Important:</b> Deleting a vehicle will also remove its associated service records, so review records carefully before removing a vehicle.</p>
 			<hr>
 	<!-- END ADDING AND MANAGING VEHICLES -->	
 
@@ -123,12 +127,12 @@ Paste this at the top of any <body> block
 
 	<!-- BEGIN ATTACHMENTS -->
         <h3 id="attachments">Working With Attachments</h3>
-
-			<p>Attachments let you keep supporting documents connected to the correct service record. This is useful for receipts, invoices, parts labels, photos of damage, warranty documents, or PDF service summaries.</p>
-			
-			<p>When a service record has attachments, the app can show an attachment indicator so you can quickly see which records include supporting files.</p>
-			
-			<p>Use the attachment viewer to open saved images or PDF documents from a service record. Attachments are part of your service history and should be included in your backup workflow when exporting data.</p>
+		
+		<p>When a service record has attachments, an icon in the rightmost column of the service record table shows the number of attached files. Clicking this icon opens the attachment viewer and manager.</p>
+		
+		<p>You can also open the attachment viewer using the button at the bottom of the service record detail form.</p>
+		
+		<p>Use the attachment viewer to open, review, and manage saved images or PDF documents associated with the selected service record.</p>
 			<hr>
 	<!-- END ATTACHMENTS -->	
 	
@@ -136,14 +140,33 @@ Paste this at the top of any <body> block
 	
 	 <h3 id="search-filter">Searching, Filtering, and Sorting</h3>
 		
-		<p>Vehicle Service Tracker includes flexible search, filtering, and sorting tools to help you find the records you need.</p>
+		<p>Vehicle Service Tracker includes flexible searching and sorting tools to help you find the records you need.</p>
 		
-		<p>You can search service records by keyword and narrow results using criteria such as vehicle, service date, mileage, cost, and service text. This is useful for finding a specific repair, reviewing costs over a time period, or locating records related to a part or service provider.</p>
+		<p>The app provides two search modes: <strong>Vehicle Search</strong> and <strong>Service Record Search</strong>. Each mode is designed for a different type of data and includes its own set of filters.</p>
 		
-		<p>Sorting lets you reorder table results by fields such as date, mileage, cost, or summary. The app keeps sorting behavior consistent between the main service record table and report views where applicable.</p>
+		<p><strong>Vehicle Search</strong> is used to locate vehicles based on identifying information or current status. You can search using a text “contains” field (for names, notes, or identifiers) and filter by mileage range.</p>
 		
-		<p>These tools are especially useful when you have years of service history and want to review only a subset of records.</p>
-		<hr>
+		<a href="images/vehicle-service-records-panel.jpg" target="_blank">
+		<img src="images/vehicle-service-records-panel.jpg"
+			   alt="Vehicle Search Panel"
+			   class="doc-image">
+		</a>
+		<p class="caption">Vehicle Search Panel</p>
+			
+		<p><strong>Service Record Search</strong> is used to find specific maintenance or repair records. In addition to a text “contains” field (for summaries, notes, or descriptions), you can filter by service date range, mileage at time of service, and cost range.</p>
+		
+		<p>Sorting lets you reorder table results by fields such as date, mileage, cost, or summary. Click a column header in the table to sort by that field. Click the same header again to switch between ascending and descending order.</p>
+		
+		<p>These tools are especially useful when working with large amounts of service history. For example, you can sort by cost to quickly identify your most expensive repairs, sort by date to review recent work, or filter and sort records to focus on a specific time period.</p>
+
+		<p>The current search results are also used by the <strong>Reports</strong> function. Reports let you see things like total miles driven during a certain period, or maintenance costs over time.</p>	
+
+		<a href="images/search-service-records-panel.jpg" target="_blank">
+		<img src="images/search-service-records-panel.jpg"
+			   alt="Service Item Search Panel"
+			   class="doc-image">
+		</a>
+		<p class="caption">Service Item Search Panel</p>
 		  
 	<!-- END Searching and Filtering -->
 
@@ -154,9 +177,18 @@ Paste this at the top of any <body> block
 			
 			<p>Reports can be used to review service history, summarize ownership costs, prepare information for sale, or print a readable maintenance history for your own records.</p>
 			
-			<p>Depending on your current criteria, reports may reflect filtered service records, selected vehicles, date ranges, mileage ranges, and sort order.</p>
+			<p>Reports update automatically based on what you’re currently viewing. As you apply filters or adjust your search criteria in the main window, the report reflects that same subset of service records in real time.</p>
+			<p>This means you can narrow your results by vehicle, date range, mileage, cost, or other criteria, and immediately see a matching report without needing to run anything separately.</p>
 			
-			<p>The report layout is designed to be readable on screen and suitable for printing or saving through standard macOS options.</p>
+			<p>Reports display your data in a hierarchical format, with vehicles shown at the top level and their associated service records listed beneath them. Each vehicle section can be expanded or collapsed, allowing you to focus on the level of detail you need.</p>
+			<p>Reports are designed to be easy to read on screen and work well for printing. Or, if you want a copy of the report, but don't want to print a hard copy, you can use the Print function, but choose to Save to PDF.</p>
+			
+			<a href="images/Reports-view.jpg" target="_blank">
+			<img src="images/Reports-view.jpg"
+				   alt="Vehicle Service Tracker Reports"
+				   class="doc-image">
+			</a>
+			<p class="caption">Reports Screen</p>
 			
         	<hr>
     <!-- END Reports -->
@@ -164,39 +196,32 @@ Paste this at the top of any <body> block
         
 <!-- BEGIN Exporting and Importing Data -->
 	<h3 id="export-import">Exporting and Importing Data</h3>
+	<p>Use the Import/Export tools to create a complete backup of your data or restore it later.</p>
 	
-
-	<p>
-	  Access import and export options through the app’s import/export tools.
-	</p>
-	
-	<p>
-	  Vehicle Service Tracker lets you back up and transfer your <strong>vehicle</strong>, <strong>service record</strong>, and <strong>attachment metadata</strong> data.
-	</p>
-	
+	<p>A full export includes:</p>
 	<ul>
-	  <li><strong>Export data</strong> to a backup folder</li>
-	  <li><strong>Include attachment files</strong> when creating a complete backup</li>
-	  <li><strong>Import data</strong> from a compatible backup folder</li>
+	  <li>All vehicles</li>
+	  <li>All service records</li>
+	  <li>Any attached files, if you choose to include them</li>
 	</ul>
 	
-	<h3>Where Exported Files Go</h3>
-	
-	<p>
-	  When exporting, the app creates a folder containing the backup JSON file and, when applicable, an attachments folder.
-	</p>
-	
-	<p>This folder may contain:</p>
+	<p>When you export, the app creates a backup folder. That folder contains:</p>
 	<ul>
-	  <li><strong>Your exported JSON backup file</strong></li>
-	  <li><strong>Attachment files</strong>, if included in the export</li>
+	  <li>A JSON data file with your vehicle and service record information</li>
+	  <li>An <em>Attachments</em> subfolder, when attached files are included</li>
 	</ul>
 	
-	<h3>Importing Files</h3>
+	<p>To restore your data, select the <strong>backup folder</strong> during import — not the JSON file inside it. The app will find the data file in that folder and load the associated vehicles, service records, and attachments.</p>
 	
-	<p>When importing, choose the exported backup folder. The app will locate the compatible backup file and restore the included records.</p>
+	<p>Importing can replace your existing data, depending on the option you choose. Review your selection carefully before continuing.</p>
 	
-	<p>Import may replace existing data depending on the selected import option. Review import choices carefully before continuing.</p>
+	<a href="images/import-export-window.jpg" target="_blank">
+	<img src="images/import-export-window.jpg"
+			alt="Import / Export Window"
+			class="doc-image">
+	</a>
+	<p class="caption">Import / Export Window</p>
+		  
 	<hr>
 <!-- END Exporting and Importing Data -->
 
