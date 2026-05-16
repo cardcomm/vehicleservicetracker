@@ -42,7 +42,8 @@ Paste this at the top of any <body> block
             <li><a href="#reports">Viewing Reports</a></li>
             <li><a href="#export-import">Exporting and Importing Data</a></li>
             <li><a href="#clearing-data">Create Sample Data / Clearing Your Data</a></li>
-            <li><a href="#change-app-theme">Changing Application Color Scheme</a></li> 
+            <li><a href="#change-app-theme">Changing Application Color Scheme</a></li>
+            <li><a href="#working-with-dates">Working With Dates</a></li> 
             <li><a href="#menu-locations">Application Menus</a></li>         
             <li><a href="#faq">FAQ and Troubleshooting</a></li>
         </ul>
@@ -170,7 +171,7 @@ Paste this at the top of any <body> block
 		<p><strong>Service Record Search</strong> is used to find specific service records. In addition to a text “contains” field (for summary, full description, or performed by), you can filter by service date range, mileage at time of service, and cost range.</p>
 		
 		<p>Date filters support several shortcut entry formats to make searching faster. For example, entering <code>2/2026</code> in a start or end date field automatically searches using that month and year.</p>
-		<p>Additional date entry shortcuts and examples are covered later in the <strong>Date Entry <b>TODO ADD LINK</b> </strong> section of this documentation.</p>
+		<p>Additional date entry shortcuts and examples are covered later in the <a href="#working-with-dates">Working With Dates</a> section of this documentation.</p>
 		
 		<a href="images/search-service-records-panel.jpg" target="_blank">
 		<img src="images/search-service-records-panel.jpg"
@@ -179,13 +180,14 @@ Paste this at the top of any <body> block
 		</a>
 		<p class="caption">Service Item Search Panel</p>
 		
-		<p><strong>Sorting</strong> lets you reorder table results by fields such as date, mileage, cost, or summary. Click a column header in the table to sort by that field. Click the same header again to switch between ascending and descending order.</p>
-		
 		<p><strong>Search Results Toggle</strong> lets you temporarily switch between <strong>Showing Search Results</strong> and <strong>Showing All Records</strong> without clearing your search criteria. This makes it easy to compare filtered results against your full data set without re-entering your search values.</p>
 		<p><strong>Note:</strong> when adding a new vehicle or service record, search sesults are turned off automatically and the toggle switches to <strong>Showing All Records</strong>. This prevents newly created records from being immediately hidden if they don’t match the current filters.</p>		
 		
 		<p><strong>Using Search Results</strong> becomes especially useful when working with large amounts of service history. For example, you can sort by cost to quickly identify your most expensive repairs, sort by date to review recent work, or filter and sort records to focus on a specific time period.</p>
-		<p>The current search results are also used by the Reports function. Reports let you review things like total miles driven during a certain period, maintenance costs over time, or subsets of records matching your current search criteria.</p>		  
+		
+		<p><strong>Sorting</strong> lets you reorder table results by fields such as date, mileage, cost, or summary. Click a column header in the table to sort by that field, or to switch between ascending and descending order.</p>
+		
+		<p>The current search results and sort order are also used by the Reports function. Reports let you review things like total miles driven during a certain period, maintenance costs over time, or subsets of records matching your current search criteria.</p>		  
 	<!-- END Searching and Filtering -->
 
 
@@ -303,10 +305,17 @@ Paste this at the top of any <body> block
 	
 	<p><strong>Warning:</strong> Clearing the database permanently removes all data and cannot be undone.</p>
 	
+	<a href="images/manage-data.jpg" target="_blank">
+	<img src="images/manage-data.jpg"
+		 alt="Application Color Scheme Selection Window"
+		 class="doc-image">
+	</a>
+	<p class="caption">Mangage Data Window</p>
+	
 	<hr>
 <!-- END Clearing Your Data -->
 
-<!-- BEGIN App Settings -->
+<!-- BEGIN Change Color Scheme -->
 	<h3 id="change-app-theme">Changing Application Color Scheme</h3>
 	
 		<!-- Menu Breadcrumb -->
@@ -329,7 +338,7 @@ Paste this at the top of any <body> block
 	
 	<p><em>Application must be restarted for the color theme change to take effect.</em></p>
 	
-		<a href="images/select-theme.jpg" target="_blank">
+	<a href="images/select-theme.jpg" target="_blank">
 	<img src="images/select-theme.jpg"
 		 alt="Application Color Scheme Selection Window"
 		 class="doc-image">
@@ -337,7 +346,43 @@ Paste this at the top of any <body> block
 	<p class="caption">Application Color Scheme Selection Window</p>
 	
 	<hr>
-<!-- END App Settings -->
+<!-- END Change Color Scheme -->
+
+<!-- Working with dates -->
+<h3 id="working-with-dates">Working With Dates</h3>
+
+	<p>Vehicle Service Tracker supports several convenient date entry formats for both service records and search fields.</p>
+	
+	<p><strong>Service Record Dates</strong> support several exact-date formats when entering dates in either the table or detail view, including:</p>
+	
+	<ul>
+	  <li><code>5/8/26</code></li>
+	  <li><code>5/8/2026</code></li>
+	  <li><code>5-8-26</code></li>
+	  <li><code>2026-05-08</code></li>
+	  <li><code>20260508</code></li>
+	</ul>
+	
+	<p><strong>Search Date Ranges</strong> support all of the same exact-date formats, along with additional month/year shortcut formats such as:</p>
+	
+	<ul>
+	  <li><code>3/2026</code></li>
+	  <li><code>3-2026</code></li>
+	  <li><code>Mar 2026</code></li>
+	  <li><code>March 2026</code></li>
+	</ul>
+	
+	<p>When using month/year shortcuts in search fields, the app automatically expands the entered value into an appropriate date range. For example:</p>
+	
+	<ul>
+	  <li><strong>Start date</strong> + <code>3/2026</code> → <code>03/01/2026</code></li>
+	  <li><strong>End date</strong> + <code>3/2026</code> → <code>03/31/2026</code></li>
+	</ul>
+	
+	<p>This makes it easy to quickly search an entire month without manually entering exact beginning and ending dates.</p>
+
+<hr>
+<!-- END Working with dates -->
 
 <!-- Menu locations -->
 <h3 id="menu-locations">Application Menus</h3>
