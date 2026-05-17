@@ -23,7 +23,7 @@ Paste this at the top of any <body> block
 </header>
 
     <main>
-        <p>This documentation provides a complete guide to using Vehicle Service Tracker. It covers creating and managing vehicles, recording service history, attaching receipts and documents, and using search, reporting, and backup tools to organize and review your data.</p>
+        <p>This documentation provides a complete guide to using Vehicle Service Tracker. It covers creating and managing vehicles, recording service history, attaching receipts and documents, and using search and reporting tools to organize and review your data.</p>
 		<p>Refer to the following annotated screen shot for an overview of major features</p>
 		<a href="images/annotated-master-view.jpg" target="_blank">
 		<img src="images/annotated-master-view.jpg"
@@ -57,7 +57,7 @@ Paste this at the top of any <body> block
 			<p> Detailed instructions for each feature are covered in the sections that follow.</p>			
 			
 			<h4><a href="#adding-vehicles">Add Your First Vehicle</a></h4>
-			<p>Start by adding a vehicle record. Enter basic details such as year, make, model, trim, VIN, license plate, current odometer, and any notes you want to keep with the vehicle.</p>
+			<p>Start by adding a vehicle record. Enter basic details such as year, make, model, current odometer, VIN, and license plate.</p>
 			
 			<h4><a href="#service-records">Add Service Records</a></h4>
 			<p>Once a vehicle exists, you can add service records for maintenance, repairs, inspections, parts replacement, or any other work you want to track. Records can include the service date, mileage, total cost, summary, detailed notes, and who performed the work.</p>
@@ -67,10 +67,10 @@ Paste this at the top of any <body> block
 			<p>You can open the attachment viewer from a service record to review saved files later.</p>
 			
 			<h4><a href="#search-filter">Search and Review Your History</a></h4>
-			<p>Use the search and filter tools to find records by vehicle, date range, mileage range, cost range, keyword, or service description. Sorting tools help you review records by date, mileage, cost, or summary.</p>
+			<p>Use the search and sorting tools to find records by vehicle, date range, mileage range, cost range, keyword, or service description. Sorting makes it easy to quickly identify recent work, highest-cost repairs, or services performed at specific mileage intervals.</p>
 			
 			<h4><a href="#reports">View Reports</a></h4>
-			<p>Vehicle Service Tracker includes report-style views that summarize vehicle and service information in a clean, printable format. Reports can reflect your current search criteria and sort order.</p>
+			<p>Vehicle Service Tracker includes printable report views that display vehicle and service information in a clean, organized format. Reports always use the current search results and sort order from the main window.</p>
 			
 			<h4><a href="#export-import">Export Or Inport Your Data</a></h4>
 			<p>Use the import and export tools to create a copy of your vehicle records, service records, and attachments.</p>
@@ -94,10 +94,10 @@ Paste this at the top of any <body> block
 			  <li>Current odometer reading</li>
 			  <li>VIN and license plate</li>
 			</ul>
-		<p>To add a new vehicle, use the <strong>+ (Add)</strong> button in the vehicle section. The new vehicle will appear in the table, where you can enter or update its details.</p>
+		<p>To add a new vehicle, use the <strong>+ (Add)</strong> button below the vehicle table. The new vehicle will appear in the table, where you can enter or update its details.</p>
 		<p><strong>Note:</strong> when adding a new vehicle, search results are turned off automatically and the toggle switches to <strong>Showing All Records</strong>. This prevents newly created records from being immediately hidden if they don’t match the current filters.</p>
 
-		<p>To update an existing vehicle, select it from the vehicle table and edit the fields in the detail area. Changes are saved automatically.</p>
+		<p>To update an existing vehicle, select it in the vehicle table and edit the fields directly in the table. Changes are saved automatically.</p>
 		
 		<p>To delete a vehicle, use the <strong>– (Delete)</strong> control. 
 		<br><b>Important:</b> Deleting a vehicle will also remove its associated service records, so review records carefully before removing a vehicle.</p>
@@ -122,24 +122,22 @@ Paste this at the top of any <body> block
 			
 			<p>Examples of service records include oil changes, tire rotations, brake work, batteries, belts, filters, suspension repairs, inspections, and major repairs.</p>
 			
-			<p>Keeping mileage and dates accurate makes the history more useful when planning future service or reviewing ownership costs.</p>
+			<p>Keeping mileage and dates accurate makes the history more useful when planning future service, reviewing ownership costs, or when you sell or trade the vehicle.</p>
 			
 			<p>To add a new service record, use the <strong>+ (Add)</strong> button in the service records section. The new record will appear in the table, where you can enter or update its details.</p>
 			<p><strong>Note:</strong> when adding a new service record, search results are turned off automatically and the toggle switches to <strong>Showing All Records</strong>. This prevents newly created records from being immediately hidden if they don’t match the current filters.</p>
 
-			<p>To update an existing service record, select it from the service record table and edit the fields in the detail area. Changes are saved automatically.</p>
+			<p>To update an existing service record, select it in the service record table, and edit the fields directly in the table, or in detail form. Changes are saved automatically.</p>
 			<p>To delete a service record, use the <strong>– (Delete)</strong> control.</p>
 			<hr>
 	<!-- END SERVICE RECORDS -->	
 
 	<!-- BEGIN ATTACHMENTS -->
-        <h3 id="attachments">Working With Attachments</h3>
-		
-		<p>When a service record has attachments, an icon in the rightmost column of the service record table shows the number of attached files. Clicking this icon opens the attachment viewer and manager.</p>
-		
-		<p>You can also open the attachment viewer using the button at the bottom of the service record detail form.</p>
-		
-		<p>Use the attachment viewer to open, review, and manage saved images or PDF documents associated with the selected service record.</p>
+    <h3 id="attachments">Working With Attachments</h3>
+
+		<p>Attachments are managed through the attachment viewer and manager window. You can open this window by clicking the attachment icon in the rightmost column of the service record table, or by using the <strong>Attachments</strong> button in the service record detail area.</p>
+		<p>Use the attachment viewer to add, view, or remove receipts, invoices, photos, scanned documents, or PDF files related to the selected service record.</p>
+		<p>When attachments are present, the table icon also displays the number of files currently attached to that service record.</p>
 		
 		<a href="images/attachments-viewer-manager.jpg" target="_blank">
 		<img src="images/attachments-viewer-manager.jpg"
@@ -159,7 +157,7 @@ Paste this at the top of any <body> block
 		
 		<p>The app provides two search modes: <strong>Vehicle Search</strong> and <strong>Service Record Search</strong>. Each mode is designed for a different type of data and includes its own set of filters.</p>
 		
-		<p><strong>Vehicle Search</strong> is used to locate vehicles based on identifying information or current status. You can search using a text “contains” field (for make, model, VIN, or plate) and filter by mileage range.</p>
+		<p><strong>Vehicle Search</strong> lets you filter the vehicle table using a text “contains” field (for make, model, VIN, or license plate) along with minimum and maximum mileage values. This is useful when narrowing the display to specific vehicles before reviewing service history, reports, or maintenance records.</p>
 		
 		<a href="images/vehicle-service-records-panel.jpg" target="_blank">
 		<img src="images/vehicle-service-records-panel.jpg"
@@ -168,9 +166,9 @@ Paste this at the top of any <body> block
 		</a>
 		<p class="caption">Vehicle Search Panel</p>
 			
-		<p><strong>Service Record Search</strong> is used to find specific service records. In addition to a text “contains” field (for summary, full description, or performed by), you can filter by service date range, mileage at time of service, and cost range.</p>
+		<p><strong>Service Record Search</strong> lets you filter service records using a text “contains” field (for summary, full description, or performed by), along with service date ranges, mileage at time of service, and cost ranges. This makes it easy to locate specific repairs, maintenance work, or expenses across large amounts of service history.</p>
 		
-		<p>Date filters support several shortcut entry formats to make searching faster. For example, entering <code>2/2026</code> in a start or end date field automatically searches using that month and year.</p>
+		<p>When working with search date ranges, Vehicle Service Tracker supports several shortcut date entry formats to make filtering faster. For example, entering <code>2/2026</code> in a start or end date field automatically searches using that month and year.</p>
 		<p>Additional date entry shortcuts and examples are covered later in the <a href="#working-with-dates">Working With Dates</a> section of this documentation.</p>
 		
 		<a href="images/search-service-records-panel.jpg" target="_blank">
@@ -181,7 +179,7 @@ Paste this at the top of any <body> block
 		<p class="caption">Service Item Search Panel</p>
 		
 		<p><strong>Search Results Toggle</strong> lets you temporarily switch between <strong>Showing Search Results</strong> and <strong>Showing All Records</strong> without clearing your search criteria. This makes it easy to compare filtered results against your full data set without re-entering your search values.</p>
-		<p><strong>Note:</strong> when adding a new vehicle or service record, search sesults are turned off automatically and the toggle switches to <strong>Showing All Records</strong>. This prevents newly created records from being immediately hidden if they don’t match the current filters.</p>		
+		<p><strong>Note:</strong> when adding a new vehicle or service record, search results are turned off automatically and the toggle switches to <strong>Showing All Records</strong>. This prevents newly created records from being immediately hidden if they don’t match the current filters.</p>		
 		
 		<p><strong>Using Search Results</strong> becomes especially useful when working with large amounts of service history. For example, you can sort by cost to quickly identify your most expensive repairs, sort by date to review recent work, or filter and sort records to focus on a specific time period.</p>
 		
@@ -215,7 +213,7 @@ Paste this at the top of any <body> block
 		<p>Reports update automatically based on what you’re currently viewing. As you apply filters or adjust your search criteria in the main window, the report reflects that same subset of service records in real time.</p>
 		<p>This means you can narrow your results by vehicle, date range, mileage, cost, or other criteria, and immediately see a matching report without needing to run anything separately.</p>
 		
-		<p>Reports display your data in a hierarchical format, with vehicles shown at the top level and their associated service records listed beneath them. Each vehicle section can be expanded or collapsed, allowing you to focus on the level of detail you need.</p>
+		<p>Reports display your data in a hierarchical format, with vehicles shown at the top level and their associated service records listed beneath them. Each vehicle section also includes a summary of total service costs and total recorded mileage. Vehicle sections can be expanded or collapsed, allowing you to focus on the level of detail you need.</p>
 		<p>Reports are designed to be easy to read on screen and work well for printing. Or, if you want a copy of the report, but don't want to print a hard copy, you can use the Print function, but choose to Save to PDF.</p>
 		
 		<a href="images/Reports-view.jpg" target="_blank">
