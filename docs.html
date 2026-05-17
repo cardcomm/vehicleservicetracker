@@ -442,8 +442,21 @@ Paste this at the top of any <body> block
 <!-- END Menu locations -->	
 
 	<h3 id="faq">FAQ and Troubleshooting</h3>
-	<p>[Coming Soon]</p>
+	<!-- BACKUP -->
+	<h4>How do I back up my Vehicle Service Tracker data?</h4>
+
+		<p>Vehicle Service Tracker stores its live application data in the standard macOS application data location inside your user Library folder. If you use Time Machine or another full-system backup solution, this data is normally backed up automatically.</p>	
+		<p>For additional protection or portability, you can also use the <strong>Import/Export Data</strong> tools to create exported copies of your vehicles, service records, and attachments.</p>		
+		<p>Depending on your macOS configuration and sandboxing behavior, application data is typically stored in a location similar to:</p>		
+		<p><code>~/Library/Containers/rke.VehicleServiceTracker/Data/Library/Application Support/</code></p>
+		
+		<p>This folder and its contents should not be modified manually unless you are comfortable working directly with application support files and database storage.</p>
 	<hr>
+	
+	<!-- Auto Save -->
+	<h4>How is my data saved?</h4>
+
+	<p>Vehicle Service Tracker saves changes automatically as you work. Adding or editing vehicles, service records, attachments, and other application data does not require a separate Save button or manual save step.</p>
 	
 	<center>
 		<a href="#" style="display: inline-block;">
