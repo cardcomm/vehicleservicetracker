@@ -43,6 +43,7 @@ Paste this at the top of any <body> block
             <li><a href="#attachments">Working With Attachments</a></li>
             <li><a href="#search-filter">Searching, Filtering, and Sorting</a></li>
             <li><a href="#reports">Viewing Reports</a></li>
+            <li><a href="#statistics">Viewing Statistics</a></li>
             <li><a href="#export-import">Exporting and Importing Data</a></li>
             <li><a href="#clearing-data">Create Sample Data / Clearing Your Data</a></li>
             <li><a href="#change-app-theme">Changing Application Color Scheme</a></li>
@@ -72,6 +73,9 @@ Paste this at the top of any <body> block
 
             <h4><a href="#reports">View Reports</a></h4>
             <p>Vehicle Service Tracker includes report views that display vehicle and service information in a clean, organized format. Reports use the current search results and sort order.</p>
+
+            <h4><a href="#statistics">View Statistics</a></h4>
+            <p>Use Statistics to review service costs for an individual vehicle over time, view summary information, and see costs displayed in a chart.</p>
 
             <h4><a href="#export-import">Export Or Import Your Data</a></h4>
             <p>Use the import and export tools to create a portable copy of your vehicle records, service records, and attachments.</p>
@@ -256,6 +260,28 @@ Paste this at the top of any <body> block
     <!-- END Reports -->
 
 
+    <!-- BEGIN Statistics -->
+        <h3 id="statistics">Viewing Statistics</h3>
+
+            <p>Statistics provide a visual summary of service costs for an individual vehicle over time.</p>
+            <p>Select the vehicle you want to review, then choose a time period and how you want the information grouped. Available time periods include <strong>This Year</strong>, <strong>Last 12 Months</strong>, <strong>Last 3 Years</strong>, <strong>All</strong>, and <strong>Custom</strong>. Choosing <strong>Custom</strong> allows you to specify your own starting and ending dates.</p>
+            <p>Service costs can be grouped by <strong>Month</strong>, <strong>Quarter</strong>, or <strong>Year</strong>. The Statistics view updates automatically when you change the vehicle, time period, custom dates, or grouping.</p>
+            <p>The summary shows the <strong>Total Cost</strong>, number of <strong>Service Records</strong>, and <strong>Average Cost per Service</strong> for the selected period.</p>
+            <p>The chart displays service costs over time using the selected grouping. Periods with no recorded service costs are also included, making it easier to see how maintenance and repair expenses are distributed over time.</p>
+            <p>Tap a bar in the chart to display additional information for that period, including the number of service records and total service cost. Tap the selected bar again to clear the selection.</p>
+            <p>Statistics can be printed using an AirPrint compatible printer or exported as a PDF file. The printed or exported report includes the selected vehicle, time period and grouping, summary information, and chart.</p>
+
+            <a href="images/ipad_statistics.png" target="_blank">
+                <img src="images/ipad_statistics.png"
+                     alt="Statistics Screen"
+                     class="doc-image">
+            </a>
+            <p class="caption">Statistics Screen</p>
+
+        <hr>
+    <!-- END Statistics -->
+
+
     <!-- BEGIN Exporting and Importing Data -->
         <h3 id="export-import">Exporting and Importing Data</h3>
 
@@ -330,7 +356,9 @@ Paste this at the top of any <body> block
 
             <p>The Application Menu provides access to the following commands:</p>
             <ul>
+              <li><strong>About</strong> – View app version data.</li>
               <li><strong>Report</strong> – View a report of your vehicle and service data.</li>
+              <li><strong>Statistics</strong> – Review service costs for an individual vehicle using summary information and charts.</li>
               <li><strong>Manage Data</strong> – Create sample data or permanently remove all vehicles, service items, and attachments.</li>
               <li><strong>Choose Theme</strong> – Select the application's color theme.</li>
               <li><strong>Import / Export</strong> – Import or export your vehicle and service data for backup or transfer.</li>
@@ -350,7 +378,7 @@ Paste this at the top of any <body> block
         <h3 id="faq">FAQ and Troubleshooting</h3>
         
 		<h4>How can I see how much I've spent on maintenance?</h4>
-    		<p>Use the <strong>Reports</strong> feature together with the search and filtering tools to review maintenance costs over time. For example, you can filter records by vehicle, date range, or mileage range, then open the report to view the total service cost for the displayed records.</p>
+    		<p>Use the <strong>Statistics</strong> feature to review service costs for an individual vehicle over time. You can choose a time period, group costs by month, quarter, or year, and view the results in an interactive chart. Statistics also show total service cost, number of service records, and average cost per service for the selected period. You can also use <strong>Reports</strong> together with search and filtering tools when you want to review costs for a specific subset of service records.</p>
     	<hr>
 
         <h4>How is my data saved?</h4>
