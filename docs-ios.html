@@ -24,7 +24,9 @@ Paste this at the top of any <body> block
 </header>
 
     <main>
-        <p>This documentation provides a complete guide to using Vehicle Service Tracker on iPhone. It covers creating and managing vehicles, recording service history, attaching receipts and documents, and using search and reporting tools to organize and review your data.</p>
+        <p>This documentation provides a complete guide to using Vehicle Service Tracker on iPhone. It covers creating and managing vehicles, recording service history, attaching receipts and documents, and using search and reporting tools to organize and review your data.
+       		<br><em>Documentation for version: 1.3.2</em> 
+        </p>
         <p>Refer to the following annotated screen shots for an overview of major features.</p>
 
             <a href="images/ios_vehicle_list_annotated.png" target="_blank">
@@ -43,6 +45,7 @@ Paste this at the top of any <body> block
 
         <h2>Documentation Index</h2>
         <ul>
+        	<li><a href="#iphone-duo">iPhone Duo Support</a></li>
             <li><a href="#getting-started">Getting Started</a></li>
             <li><a href="#adding-vehicles">Adding and Managing Vehicles</a></li>
             <li><a href="#service-records">Adding and Managing Service Records</a></li>
@@ -58,6 +61,47 @@ Paste this at the top of any <body> block
         </ul>
 
         <hr>
+
+        <!-- BEGIN IPHONE DUO SUPPORT -->
+        <h2 id="iphone-duo">iPhone Duo Support</h2>
+
+        <p>
+            Vehicle Service Tracker supports Apple's iPhone Duo,
+            automatically adapting its interface to the device's
+            folded or unfolded configuration.
+        </p>
+
+        <p>
+            When unfolded, the app takes advantage of the additional
+            screen space by displaying the vehicle list and service
+            records simultaneously. This makes it easy to select
+            vehicles and review their maintenance history without
+            navigating between separate screens.
+        </p>
+
+        <p>
+            When folded, Vehicle Service Tracker uses its standard
+            iPhone interface. The app also adapts to changes in
+            device orientation.
+        </p>
+
+        <a href="images/iPhone_Duo_Composite.png" target="_blank">
+            <img src="images/iPhone_Duo_Composite.png"
+                 alt="Vehicle Service Tracker on iPhone Duo in folded and unfolded configurations"
+                 class="doc-image">
+        </a>
+        <p class="caption">
+            Vehicle Service Tracker on iPhone Duo in different configurations
+        </p>
+
+        <p>
+            All application features remain available in both configurations.
+            The instructions in this guide apply to iPhone Duo as well as
+            conventional iPhone models.
+        </p>
+
+        <hr>
+        <!-- END IPHONE DUO SUPPORT -->
 
     <!-- BEGIN GETTING STARTED -->
         <h3 id="getting-started">Getting Started</h3>
@@ -111,13 +155,13 @@ Paste this at the top of any <body> block
 
 			<p>To update an existing vehicle, do one of the following:</p>
 			<ul>
-				<li>Tap <strong>Edit</strong> at the top of the screen, then tap the <strong>Edit</strong> button beside the desired vehicle. The <strong>Vehicle Edit</strong> screen opens, where you can make your changes. When you're finished, tap <strong>Done</strong>. Changes are saved automatically.</li>
+				<li>Tap the <strong>pencil (Edit)</strong> icon at the top of the screen, then tap the <strong>Edit</strong> button beside the desired vehicle. The <strong>Vehicle Edit</strong> screen opens, where you can make your changes. When you're finished, tap <strong>Done</strong>. Changes are saved automatically.</li>
 				<li>Swipe left on the vehicle row and tap <strong>Edit</strong>. The <strong>Vehicle Edit</strong> screen opens, where you can make your changes. Changes are saved automatically.</li>
 			</ul>
 			
 			<p><strong>Tip:</strong> To quickly update a vehicle's current mileage value to match the mileage from its most recent service item, tap the update mileage icon (↻) on the Vehicle Edit screen.</p>
 
-            <p>To delete a vehicle, either tap <strong>Edit</strong> at the top of the screen, then tap the red <strong>Delete</strong> button beside the desired vehicle, or swipe left on the vehicle row and tap <strong>Delete</strong>.</p>
+            <p>To delete a vehicle, either tap the <strong>pencil (Edit)</strong> icon at the top of the screen, then tap the red <strong>Delete</strong> button beside the desired vehicle, or swipe left on the vehicle row and tap <strong>Delete</strong>.</p>
             <p><strong>Important:</strong> Deleting a vehicle also removes all associated service records, so review your records carefully before deleting a vehicle.</p>
 
             <a href="images/ios_vehicle_edit_button.png" target="_blank">
@@ -162,13 +206,13 @@ Paste this at the top of any <body> block
             <p><strong>Note:</strong> When adding a new service item, search results are turned off automatically and the toggle switches to <strong>Showing All Records</strong>. This prevents newly created service items from being immediately hidden if they don’t match the current search filters.</p>
             <p>To update an existing service item, do one of the following:</p>
 			<ul>
-    			<li>Tap <strong>Edit</strong> at the top of the screen, then tap the <strong>Edit</strong> button beside the desired service item. The <strong>Service Item Edit</strong> screen opens, where you can make your changes. When you're finished, tap <strong>Done</strong>. Changes are saved automatically.</li>
+    			<li>Tap the <strong>pencil (Edit)</strong> icon at the top of the screen, then tap the <strong>Edit</strong> button beside the desired service item. The <strong>Service Item Edit</strong> screen opens, where you can make your changes. When you're finished, tap <strong>Done</strong>. Changes are saved automatically.</li>
     			<li>Swipe left on the service item row and tap <strong>Edit</strong>. The <strong>Service Item Edit</strong> screen opens, where you can make your changes. Changes are saved automatically.</li>
 			</ul>
 
 		<p>To delete a service item:</p>
 			<ul>
-			<li>Tap <strong>Edit</strong> at the top of the screen, then tap the <strong>Delete</strong> button beside the desired service item.</li>
+			<li>Tap the <strong>pencil (Edit)</strong> icon at the top of the screen, then tap the <strong>Delete</strong> button beside the desired service item.</li>
 			
 			<li>Swipe left on the service item row and tap <strong>Delete</strong>.</li>
 			</ul>
@@ -415,6 +459,11 @@ Paste this at the top of any <body> block
 		<h4>How can I see how much I've spent on maintenance?</h4>
     		<p>Use the <strong>Statistics</strong> feature to review service costs for an individual vehicle over time. You can choose a time period, group costs by month, quarter, or year, and view the results in an interactive chart. Statistics also show total service cost, number of service records, and average cost per service for the selected period. You can also use <strong>Reports</strong> together with search and filtering tools when you want to review costs for a specific subset of service records.</p>
     	<hr>
+    	
+    	<h4>How do I reuse a previously entered service provider?</h4>
+    		<p>When adding or editing a service record, you can enter a service provider name manually or use the <strong>Previous Providers</strong> picker to select a provider used in an existing service record. Selecting a provider automatically fills in the Service Provider field.</p>
+    		<p>The list of previous providers is generated automatically from your existing service records, so there's no separate provider list to maintain. Reusing provider names also helps keep your records consistent when searching by provider.</p>
+<hr>
 
         <h4>How is my data saved?</h4>
             <p>Vehicle Service Tracker saves changes automatically as you work. Adding or editing vehicles, service records, attachments, and other application data does not require a separate Save button.</p>
@@ -429,12 +478,15 @@ Paste this at the top of any <body> block
         <hr>
 
 		<h4>Does Vehicle Service Tracker support iCloud sync?</h4>	
-			<p>Vehicle Service Tracker supports iCloud synchronization between Macs signed into the same Apple ID. When iCloud is enabled for the app, vehicles, service records, attachments, and related data automatically synchronize in the background.</p>
+			<p>Vehicle Service Tracker supports iCloud synchronization between Macs, iPhones, and iPads signed into the same Apple Account. When iCloud is enabled for the app, vehicles, service records, attachments, and related data automatically synchronize in the background.</p>
 		<hr>
-
-
-
-<!-- Add the iPhone App Store badge and link after the iPhone listing is final. -->
+		
+		
+	<center>
+		<a href="downloads.html" style="display: inline-block;">
+		<img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1753660800" alt="Download on the App Store" style="width: 245px; height: 82px; vertical-align: middle; object-fit: contain;" />
+		</a>
+    </center>
 
     </main>
 <!--
